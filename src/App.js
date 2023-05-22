@@ -16,21 +16,21 @@ function App() {
       <Navbar />
       
       {/* section-1 */}
-      <section className='h-[80vh] bg-no-repeat bg-fixed bg-cover items-center bg-[url("https://images.pexels.com/photos/772429/pexels-photo-772429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")] bg-image'>
+      <section className='h-[85vh] bg-no-repeat bg-fixed bg-cover items-center bg-[url("https://images.pexels.com/photos/772429/pexels-photo-772429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")] bg-image'>
         <div className="flex w-full h-full justify-center items-center">
-            <div className="p-10 ">
+            <div className="p-10 space-y-4">
                  <h1 className=" text-black text-[1.5rem] mt-[10rem] font-bold ">Want your images to be safe ? </h1>
                   <div className="flex justify-center items-center">
-                      <button className="bg-gray-100 cursor-pointer text-indigo-500 font-bold hover:shadow-2xl transition transtion-delay px-10 py-3 rounded-3xl">
-                        Sure
-                      </button>
+                      <a href="#encrypt" className="bg-gray-100 cursor-pointer text-indigo-500 font-bold hover:shadow-2xl transition transtion-delay px-10 py-3 rounded-3xl">
+                        Off-course
+                      </a>
                   </div>
             </div>
         </div>
       </section>
 
       {/* section - 2 */}
-      <section className="text-gray-600 bg-white body-font overflow-hidden">
+      <section id="encrypt"  className="text-gray-600 h-screen bg-white body-font overflow-hidden">
         <div className="container px-5 py-14 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
