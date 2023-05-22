@@ -17,6 +17,11 @@ function App() {
       
       {/* section-1 */}
       <section className='h-[80vh] bg-no-repeat bg-fixed bg-cover items-center bg-[url("https://images.pexels.com/photos/772429/pexels-photo-772429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")] bg-image'>
+        <div className="flex w-full h-full justify-center items-center">
+            <div className="p-10 ">
+                 <h1 className=" text-white text-[2rem] font-medium uppercase">Want your images to be safe ? </h1>
+            </div>
+        </div>
       </section>
 
       {/* section - 2 */}
@@ -111,20 +116,21 @@ function App() {
       </section>
 
       {/* section-3 */}
-      <section className="min-h-[80vh] h-auto  flex justify-center items-center p-5">
+      
+      <section className='min-h-[80vh] h-auto p-5 flex justify-center bg-no-repeat bg-fixed bg-cover items-center bg-[url("https://images.pexels.com/photos/772429/pexels-photo-772429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")] bg-image'>
             <div className="flex flex-col space-y-5 md:space-y-0 md:flex-row md:space-x-5 h-full items-center justify-around">
 
-                  <div className="card  flex flex-col space-y-2 " >
+                  <div className="card  flex flex-col space-y-2 border" >
                       <h1 className="font-Ubuntu text-black uppercase font-extrabold"> Upload your image </h1>
                       <p className="text-sm text-gray-500" > Welcome to our image encryption platform! Get started by securely uploading your image to protect its privacy and ensure its confidentiality. Our user-friendly interface allows you to easily select and upload your image file from your device or cloud storage. </p>
                   </div>
 
-                  <div className="card flex flex-col space-y-5 " >
+                  <div className="card flex flex-col space-y-5  border" >
                   <h1 className="font-Ubuntu text-black font-medium"><span className="bg-indigo-500 text-white px-5 py-3 rounded-lg">Encrypt</span></h1>
                   <p className="text- text-gray-500" > Our advanced encryption algorithms will work their magic to transform your image into an encrypted format that is virtually impossible to decipher without the correct decryption key. Your image's content, details, and visual information will be safeguarded, ensuring that only authorized individuals can access its original form. </p>
                   </div>
 
-                  <div className="card flex flex-col space-y-5 " >
+                  <div className="card flex flex-col space-y-5 border" >
                   <h1 className="font-Ubuntu text-black font-medium"><span className="border border-indigo-500 text-indigo-500 px-5 py-3 rounded-lg">Decrypt</span></h1>
                   <p className="text- text-gray-500" > Unlock the encrypted images and restore them to their original form through our seamless decryption process. If you have encrypted images that require decryption, you've come to the right place.
 Our decryption feature allows you to safely retrieve your encrypted images.</p>
