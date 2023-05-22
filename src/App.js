@@ -24,7 +24,7 @@ function App() {
         <div className="container px-5 py-14 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
-              <h2 className="text-sm title-font text-gray-500 tracking-widest">
+              <h2 className="text-sm title-font     text-gray-500 tracking-widest">
                 Project Name
               </h2>
               <h1 className="text-gray-900 text-3xl title-font font-medium mb-4">
@@ -35,7 +35,7 @@ function App() {
                   Description
                 </a>
               </div>
-              <p className="leading-relaxed mb-4 overflow-y-auto h-80 scrollbar scrollbar-thin scrollbar-thumb-indigo-500">
+              <p className="leading-relaxed mb-4 overflow-y-auto h-80  scrollbar-thin scrollbar-thumb-indigo-500">
                 Fam locavore kickstarter distillery. Mixtape chillwave tumeric
                 sriracha taximy chia microdosing tilde DIY. XOXO fam inxigo
                 juiceramps cornhole raw denim forage brooklyn. Everyday carry +1
