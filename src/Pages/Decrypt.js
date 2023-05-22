@@ -20,7 +20,7 @@ function Decrypt() {
     },1000);
    }
 
-   
+
   return (
     <>
         <Navbar />
@@ -91,12 +91,12 @@ function Decrypt() {
                   />
                 </label>
                 <button onClick={handleClick} className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
-                  Encrypt
+                  Decrypt
                 </button>
               </form>
               <div className="text-center">
-                <a href="#" className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
-                  Click here to Decrypt your Image
+                <a href="/" className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                   Back to home
                 </a>
               </div>
             </div>
