@@ -30,10 +30,10 @@ function App() {
       <Navbar />
       
       {/* section-1 */}
-      <section className='h-[85vh] bg-no-repeat bg-fixed bg-cover items-center bg-[url("https://images.pexels.com/photos/13286774/pexels-photo-13286774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")] bg-image'>
-        <div className="flex w-full h-full justify-center items-center bg-neutral-400 bg-opacity-10">
+      <section className='h-[85vh] bg-no-repeat bg-fixed bg-cover items-center bg-[url("https://images.pexels.com/photos/772429/pexels-photo-772429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")] bg-image'>
+        <div className="flex w-full h-full justify-center items-center  bg-opacity-10">
             <div className="p-10 space-y-4">
-                 <h1 className=" text-white text-[1.5rem] mt-[10rem] font-bold font-Ubuntu ">Want your images to be safe ? </h1>
+                 <h1 className=" text-black text-[1.5rem] mt-[10rem] font-extrabold font-Ubuntu ">Want your images to be safe ? </h1>
                   <div className="flex justify-center items-center">
                       <a href="#encrypt"  className="bg-gray-100 font-Ubuntu cursor-pointer text-indigo-500 font-bold hover:shadow-2xl transition transtion-delay px-10 py-3 rounded-3xl">
                         Of-course
