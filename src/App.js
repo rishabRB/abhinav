@@ -3,7 +3,7 @@ import "./App.css";
 import React, { useState } from "react";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import { PhotoIcon } from "@heroicons/react/24/solid";
+import { ArrowDownTrayIcon, PhotoIcon } from "@heroicons/react/24/solid";
 
 function App() {
   const [file, setFile] = useState();
@@ -13,6 +13,7 @@ function App() {
   }
 
   const [isLoading, setIsLoading] = useState(false)
+  const [isEncrypted,setIsEncrypted] = useState(false)
 
 
 
@@ -132,8 +133,26 @@ function App() {
           </div>
         </div>
         :
+
+        //loading 
+
         <div className="h-full flex items-center justify-center">
+           {
+           !isEncrypted ? 
+
+            <div className="w-[60rem] h-[30rem] border-2 flex rounded-md justify-center items-center bg-cover bg-no-repeat bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR9pb4Qh09hN0mxzmEU5OhSglvtl2sKhv8YreLJ9tAfEE-GAbdVYoPxagbLxo2Z_O-XAA&usqp=CAU')]">
+                <div className="flex flex-col items-center bg-neutral-100 bg-opacity-10 justify-center space-y-5">
+                    <h1 className="text-2xl font-Ubuntu font-bold text-white">
+                        Here is your encrypted image
+                    </h1>
+                    <button className="px-6 py-2 font-Ubuntu flex items-center bg-indigo-500 text-white hover:shadow-xl cursor-pointer rounded-full"> <ArrowDownTrayIcon  className="h-5 w-5 mr-3"/> Download</button>
+                </div>
+            </div>
+            :
+            <div>
             <PhotoIcon className="h-10 w-10 text-indigo-500 animate-bounce" />
+            </div>
+            }
         </div>
         }
       </section>
