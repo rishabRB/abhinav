@@ -20,6 +20,11 @@ function App() {
         <div className="flex w-full h-full justify-center items-center">
             <div className="p-10 ">
                  <h1 className=" text-black text-[1.5rem] mt-[10rem] font-bold ">Want your images to be safe ? </h1>
+                  <div className="flex justify-center items-center">
+                      <button className="bg-gray-100 cursor-pointer text-indigo-500 font-bold hover:shadow-2xl transition transtion-delay px-10 py-3 rounded-3xl">
+                        Sure
+                      </button>
+                  </div>
             </div>
         </div>
       </section>
