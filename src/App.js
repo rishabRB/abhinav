@@ -16,7 +16,7 @@ function App() {
       <Navbar />
       
       {/* section-1 */}
-      <section className='h-[80vh]'>
+      <section className='h-[80vh] bg-no-repeat bg-fixed bg-cover items-center bg-[url("https://images.pexels.com/photos/772429/pexels-photo-772429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")] bg-image'>
       </section>
 
       {/* section - 2 */}
