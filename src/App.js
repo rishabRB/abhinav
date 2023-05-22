@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import { ArrowDownTrayIcon, PhotoIcon } from "@heroicons/react/24/solid";
@@ -15,6 +15,17 @@ function App() {
   const [isLoading, setIsLoading] = useState(false)
   const [isEncrypted,setIsEncrypted] = useState(false)
 
+ 
+ const handleClick=()=>{
+  setIsLoading(true)
+  setTimeout(()=>{
+    setIsLoading(false)
+  },3000)
+
+  setTimeout(() => {
+    setIsEncrypted(true) 
+  },1000);
+ }
 
 
   return (
@@ -24,12 +35,12 @@ function App() {
       
       {/* section-1 */}
       <section className='h-[85vh] bg-no-repeat bg-fixed bg-cover items-center bg-[url("https://images.pexels.com/photos/772429/pexels-photo-772429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")] bg-image'>
-        <div className="flex w-full h-full justify-center items-center bg-neutral-700 bg-opacity-40">
+        <div className="flex w-full h-full justify-center items-center bg-neutral-500 bg-opacity-20">
             <div className="p-10 space-y-4">
                  <h1 className=" text-white text-[1.5rem] mt-[10rem] font-bold font-Ubuntu ">Want your images to be safe ? </h1>
                   <div className="flex justify-center items-center">
                       <a href="#encrypt"  className="bg-gray-100 font-Ubuntu cursor-pointer text-indigo-500 font-bold hover:shadow-2xl transition transtion-delay px-10 py-3 rounded-3xl">
-                        Off-course
+                        Of-course
                       </a>
                   </div>
             </div>
@@ -110,7 +121,7 @@ function App() {
                     onChange={handleChange} 
                   />
                 </label>
-                <button onClick={()=> setIsLoading(true)} className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
+                <button onClick={handleClick} className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
                   Encrypt
                 </button>
               </form>
@@ -133,13 +144,10 @@ function App() {
           </div>
         </div>
         :
-
         //loading 
-
         <div className="h-full flex items-center justify-center">
            {
-           !isEncrypted ? 
-
+           isEncrypted ? 
             <div className="w-[60rem] h-[30rem] border-2 flex rounded-md justify-center items-center bg-cover bg-no-repeat bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR9pb4Qh09hN0mxzmEU5OhSglvtl2sKhv8YreLJ9tAfEE-GAbdVYoPxagbLxo2Z_O-XAA&usqp=CAU')]">
                 <div className="flex flex-col items-center bg-neutral-100 bg-opacity-10 justify-center space-y-5">
                     <h1 className="text-2xl font-Ubuntu font-bold text-white">
@@ -190,7 +198,6 @@ Our decryption feature allows you to safely retrieve your encrypted images.</p>
             <div className="flex items-center justify-center">
                 <img src="https://qph.cf2.quoracdn.net/main-qimg-87b6b3c9d0c8fd2d8aed16421b8024e6" alt=""  className="format-img"/>
                 <img src="https://cdn-icons-png.flaticon.com/512/337/337948.png" alt=""  className="format-img"/>
-                <img src="https://cdn-icons-png.flaticon.com/512/337/337936.png" alt=""  className="format-img"/>
                 <img src="https://blog.idrsolutions.com/app/uploads/2017/03/BMP.png" alt=""  className="format-img"/>
                 <img src="https://blog.idrsolutions.com/app/uploads/2015/04/TIFF.png" alt=""  className="format-img"/>
             </div>
