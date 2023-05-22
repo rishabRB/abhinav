@@ -8,7 +8,7 @@ function Navbar() {
     <div onClick={()=> {}} className="flex items-center space-x-2 px-2">
       {/* <PhotoIcon className='h-8 w-8  text-indigo-500' /> */}
     <div className="text-black uppercase font-bold tracking-[8px] font-Ubuntu text-xl">
-        ImgEncrypt
+        ImagEncrypt
     </div>
    </div>
    <div className='items-cente flex' >

@@ -35,7 +35,7 @@ function App() {
       
       {/* section-1 */}
       <section className='h-[85vh] bg-no-repeat bg-fixed bg-cover items-center bg-[url("https://images.pexels.com/photos/772429/pexels-photo-772429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")] bg-image'>
-        <div className="flex w-full h-full justify-center items-center bg-neutral-500 bg-opacity-20">
+        <div className="flex w-full h-full justify-center items-center bg-neutral-400 bg-opacity-10">
             <div className="p-10 space-y-4">
                  <h1 className=" text-white text-[1.5rem] mt-[10rem] font-bold font-Ubuntu ">Want your images to be safe ? </h1>
                   <div className="flex justify-center items-center">
