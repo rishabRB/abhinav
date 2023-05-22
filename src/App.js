@@ -19,7 +19,7 @@ function App() {
       <section className='h-[80vh] bg-no-repeat bg-fixed bg-cover items-center bg-[url("https://images.pexels.com/photos/772429/pexels-photo-772429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")] bg-image'>
         <div className="flex w-full h-full justify-center items-center">
             <div className="p-10 ">
-                 <h1 className=" text-black text-[1.5trem] font-medium ">Want your images to be safe ? </h1>
+                 <h1 className=" text-black text-[1.5rem] font-medium ">Want your images to be safe ? </h1>
             </div>
         </div>
       </section>
