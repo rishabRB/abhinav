@@ -3,6 +3,7 @@ import "./App.css";
 import React, { useState } from "react";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import { PhotoIcon } from "@heroicons/react/24/solid";
 
 function App() {
   const [file, setFile] = useState();
@@ -10,6 +11,8 @@ function App() {
       console.log(e.target.files);
       setFile(URL.createObjectURL(e.target.files[0]));
   }
+
+  const [isLoading, setIsLoading] = useState(false)
 
 
 
@@ -32,8 +35,15 @@ function App() {
         </div>
       </section>
 
+      
+      
+      
       {/* section - 2 */}
-      <section id="encrypt"  className="text-gray-600 h-screen bg-white body-font overflow-hidden">
+
+
+       <section id="encrypt"  className="text-gray-600 h-screen bg-white body-font overflow-hidden">
+        {
+         !isLoading ? 
         <div className="container px-5 py-14 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
@@ -99,7 +109,7 @@ function App() {
                     onChange={handleChange} 
                   />
                 </label>
-                <button className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
+                <button onClick={()=> setIsLoading(true)} className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
                   Encrypt
                 </button>
               </form>
@@ -121,7 +131,15 @@ function App() {
             />)}
           </div>
         </div>
+        :
+        <div className="h-full flex items-center justify-center">
+            <PhotoIcon className="h-10 w-10 text-indigo-500 animate-bounce" />
+        </div>
+        }
       </section>
+    
+    
+
 
       {/* section-3 */}
       
