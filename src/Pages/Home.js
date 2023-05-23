@@ -32,7 +32,7 @@ function Home() {
   setIsLoading(true)
   setTimeout(() => {
     setIsEncrypted(true) 
-  },1000);
+  },6000);
  }
 
 
