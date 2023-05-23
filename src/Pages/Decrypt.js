@@ -28,45 +28,20 @@ function Decrypt() {
         <div className="container px-5 py-14 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
-              <h2 className="text-sm title-font     text-gray-500 tracking-widest">
-                Project Name
-              </h2>
-              <h1 className="text-gray-900 text-3xl title-font font-medium mb-4">
-                Topic Heading
+            <h1 className="text-gray-900 text-2xl title-font font-Ubuntu font-medium mb-4">
+                 Keep your images safe like never before
               </h1>
               <div className="flex mb-4">
                 <a className="flex-grow text-indigo-500 border-b-2 border-indigo-500 py-2 text-lg px-1">
                   Description
                 </a>
               </div>
-              <p className="leading-relaxed mb-4 overflow-y-auto h-80  scrollbar-thin scrollbar-thumb-indigo-500">
-                Fam locavore kickstarter distillery. Mixtape chillwave tumeric
-                sriracha taximy chia microdosing tilde DIY. XOXO fam inxigo
-                juiceramps cornhole raw denim forage brooklyn. Everyday carry +1
-                seitan poutine tumeric. Gastropub blue bottle austin listicle
-                pour-over, neutra jean.Fam locavore kickstarter distillery.
-                Mixtape chillwave tumeric sriracha taximy chia microdosing tilde
-                DIY. XOXO fam inxigo juiceramps cornhole raw denim forage
-                brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub
-                blue bottle austin listicle pour-over, neutra jean.Fam locavore
-                kickstarter distillery. Mixtape chillwave tumeric sriracha
-                taximy chia microdosing tilde DIY. XOXO fam inxigo juiceramps
-                cornhole raw denim forage brooklyn. Everyday carry +1 seitan
-                poutine tumeric. Gastropub blue bottle austin listicle
-                pour-over, neutra jean.Fam locavore kickstarter distillery.
-                Mixtape chillwave tumeric sriracha taximy chia microdosing tilde
-                DIY. XOXO fam inxigo juiceramps cornhole raw denim forage
-                brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub
-                blue bottle austin listicle pour-over, neutra jean.Fam locavore
-                kickstarter distillery. Mixtape chillwave tumeric sriracha
-                taximy chia microdosing tilde DIY. XOXO fam inxigo juiceramps
-                cornhole raw denim forage brooklyn. Everyday carry +1 seitan
-                poutine tumeric. Gastropub blue bottle austin listicle
-                pour-over, neutra jean.Fam locavore kickstarter distillery.
-                Mixtape chillwave tumeric sriracha taximy chia microdosing tilde
-                DIY. XOXO fam inxigo juiceramps cornhole raw denim forage
-                brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub
-                blue bottle austin listicle pour-over, neutra jean.
+              <p className="leading-relaxed mb-4 overflow-y-auto h-80  scrollbar-none">
+              Welcome to our image encryption website! Our platform provides a secure and user-friendly way to encrypt your images to protect them from unauthorized access.
+              To get started, simply upload your image and select the encryption button We will run our algorithm and encrypt your image.
+              After your image has been encrypted, we will provide you with a download button that you can use to download your encrypted image. You can then share the encrypted image with others, knowing that it is protected from unauthorized access.
+              We take your security seriously and use the latest encryption technologies to ensure that your images are safe. However, it is important to note that while image encryption can provide a high level of security, it is not foolproof. We recommend that you take additional precautions to protect your images as well.
+              Thank you for choosing our image encryption website. We are committed to providing you with a secure and reliable service.
               </p>
               <form className="flex items-center">
                 <div className="shrink-0">
@@ -108,7 +83,7 @@ function Decrypt() {
             /> ) : (<img
               alt="ecommerce"
               className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
-              src="https://dummyimage.com/400x400"
+              src="https://www.ultimatesource.toys/wp-content/uploads/2013/11/dummy-image-square-1.jpg"
             />)}
           </div>
         </div>
