@@ -35,6 +35,7 @@ function Home() {
   const [decImg,setDecImg] = useState(null)
   const [index,setIndex] = useState(0)
 
+
   
   function handleChange(e) {
       setFile(URL.createObjectURL(e.target.files[0]));
@@ -228,7 +229,7 @@ function Home() {
                     onChange={(e)=>handleDecImage(e)} 
                   />
                 </label>
-                <button disabled={decfile ? false : true} onClick={(e)=> {e.preventDefault() ; setDecImg(fakeImg)}} className="flex ml-auto disabled:bg-indigo-300 disabled:cursor-not-allowed text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
+                <button disabled={decfile ? false : true} onClick={(e)=> {e.preventDefault() ; setTimeout(()=>{setDecImg(fakeImg)},2000)}} className="flex ml-auto disabled:bg-indigo-300 disabled:cursor-not-allowed text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
                   Decrypt
                 </button>
               </form>
