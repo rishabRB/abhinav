@@ -152,6 +152,8 @@ function Home() {
         }
       </section>
 
+      <hr className="border-3"/>
+
       {/* decrypt image */}
       <section id="decrypt"  className="text-gray-600 h-screen flex items-center justify-center bg-white body-font overflow-hidden">
         <div className="container px-5 py-14 mx-auto">
