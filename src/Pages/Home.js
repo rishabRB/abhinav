@@ -3,7 +3,7 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { ArrowDownTrayIcon, PhotoIcon } from "@heroicons/react/24/solid";
 // import { useNavigate } from "react-router-dom";
-import img from "../"
+
 
 
 const imageArray=[
@@ -16,7 +16,12 @@ const imageArray=[
 ]
 
 const imageArray2 = [
-  "."
+  "../utils/image/img_0.jpg",
+  "../utils/image/img_1.jpg",
+  "../utils/image/img_2.jpg",
+  "../utils/image/img_3.jpg",
+  "../utils/image/img_4.jpg",
+  "../utils/image/img_5.jpg"
 ]
 
 
@@ -166,7 +171,7 @@ function Home() {
                     <h1 className="text-2xl font-Ubuntu font-bold text-white">
                         Here is your encrypted image
                     </h1>
-                    <a href={imageArray[index]} download onClick={()=> handleDownload()} className="px-6 py-2 font-Ubuntu flex items-center bg-indigo-500 text-white hover:shadow-xl cursor-pointer rounded-full"> <ArrowDownTrayIcon  className="h-5 w-5 mr-3"/> Download</a>
+                    <a href={imageArray2[index]} download onClick={()=> handleDownload()} className="px-6 py-2 font-Ubuntu flex items-center bg-indigo-500 text-white hover:shadow-xl cursor-pointer rounded-full"> <ArrowDownTrayIcon  className="h-5 w-5 mr-3"/> Download</a>
                 </div>
             </div>
             :
