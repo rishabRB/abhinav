@@ -8,12 +8,15 @@ import { ArrowDownTrayIcon, PhotoIcon } from "@heroicons/react/24/solid";
 function Home() {
 
   const [file, setFile] = useState(null);
+  const [fakeImg , setFakeImg] = useState(null)
   const [decfile,setdecFile] = useState(null)
   const [decImg,setDecImg] = useState(null)
 
   
   function handleChange(e) {
       setFile(URL.createObjectURL(e.target.files[0]));
+      setFakeImg(URL.createObjectURL(e.target.files[0]));
+      
   }
 
   const handleDecImage=(e)=>{
@@ -137,7 +140,7 @@ function Home() {
                     <h1 className="text-2xl font-Ubuntu font-bold text-white">
                         Here is your encrypted image
                     </h1>
-                    <button onClick={()=> setIsLoading(false)} className="px-6 py-2 font-Ubuntu flex items-center bg-indigo-500 text-white hover:shadow-xl cursor-pointer rounded-full"> <ArrowDownTrayIcon  className="h-5 w-5 mr-3"/> Download</button>
+                    <button onClick={()=> {setFile(null) ; setIsLoading(false)}} className="px-6 py-2 font-Ubuntu flex items-center bg-indigo-500 text-white hover:shadow-xl cursor-pointer rounded-full"> <ArrowDownTrayIcon  className="h-5 w-5 mr-3"/> Download</button>
                 </div>
             </div>
             :
@@ -191,7 +194,7 @@ function Home() {
                     onChange={(e)=>handleDecImage(e)} 
                   />
                 </label>
-                <button disabled={decfile ? false : true} onClick={(e)=> {e.preventDefault() ; setDecImg(file)}} className="flex ml-auto disabled:bg-indigo-300 disabled:cursor-not-allowed text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
+                <button disabled={decfile ? false : true} onClick={(e)=> {e.preventDefault() ; setDecImg(fakeImg)}} className="flex ml-auto disabled:bg-indigo-300 disabled:cursor-not-allowed text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
                   Decrypt
                 </button>
               </form>
