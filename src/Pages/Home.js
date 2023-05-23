@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import { ArrowDownTrayIcon, PhotoIcon } from "@heroicons/react/24/solid";
 // import { useNavigate } from "react-router-dom";
+import img from "../"
 
 
 const imageArray=[
@@ -12,6 +13,10 @@ const imageArray=[
 "https://i.ibb.co/M6n5nkW/img-3.jpg",
 "https://i.ibb.co/M6n5nkW/img-4.jpg",
 "https://i.ibb.co/0ryz10w/img-5.jpg",
+]
+
+const imageArray2 = [
+  "."
 ]
 
 
@@ -37,11 +42,11 @@ function Home() {
 
   const handleDownload=()=>{
     const x = Math.floor(Math.random() * 5)
+    setIndex(x)
     setTimeout(()=>{
       setFile(null) ;
       setIsLoading(false)
     },3000)
-    
   }
 
   const [isLoading, setIsLoading] = useState(false)
