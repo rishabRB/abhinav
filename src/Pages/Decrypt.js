@@ -1,23 +1,25 @@
 import React, { useEffect, useState } from "react";
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import { useCookies } from "react-cookie";
 
 function Decrypt() {
     const [file, setFile] = useState();
-    function handleChange(e) {
-        console.log(e.target.files);
-        setFile(URL.createObjectURL(e.target.files[0]));
-    }
+    // function handleChange(e) {
+    //     console.log(e.target.files);
+    //     setFile(URL.createObjectURL(e.target.files[0]));
+    // }
+
+    const [cookies, setCookie] = useCookies(['name']);
+    // const [decImg,setDecImg] = useState(null)
 
     const [isLoading, setIsLoading] = useState(false)
     const [isEncrypted,setIsEncrypted] = useState(false)
   
    
-   const handleClick=()=>{
-    setIsLoading(true)
-    setTimeout(() => {
-      setIsEncrypted(true) 
-    },1000);
+   const handleClick=(e)=>{
+      e.preventDefault()
+      console.log(cookies.path)
    }
 
 
@@ -62,7 +64,7 @@ function Decrypt() {
                       file:bg-violet-50 file:text-violet-700
                       hover:file:bg-violet-100 ml-5
                     "
-                    onChange={handleChange} 
+                    // onChange={handleChange} 
                   />
                 </label>
                 <button onClick={handleClick} className="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
