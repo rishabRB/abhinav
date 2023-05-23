@@ -49,7 +49,7 @@ function Home() {
       {/* section - 2 */}
 
 
-       <section id="encrypt"  className="text-gray-600 h-screen bg-white body-font overflow-hidden">
+       <section id="encrypt"  className="text-gray-600 h-screen flex justify-center items-center bg-white body-font overflow-hidden">
         {
         !isLoading ? 
         <div className="container px-5 py-14 mx-auto">
