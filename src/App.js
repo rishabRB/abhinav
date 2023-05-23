@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Decrypt from "./Pages/Decrypt";
 import Home from "./Pages/Home";
+import Contact from "./Pages/Contact";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/"  element={<Home />}/>
         <Route path="/decrypt" element={<Decrypt />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
      </Router>
    </>

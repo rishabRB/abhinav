@@ -14,7 +14,7 @@ function Navbar() {
     </div>
    </div>
    <div className='items-cente flex' >
-    <UserCircleIcon className='h-10 w-10 text-indigo-500'/>
+        <a href="/contact" className='uppercase font-medium text-black px-3 py-2  rounded-md hover:text-indigo-400 transition delay-150 ease-out'>Contact us</a>
   </div>
   </nav>
   )
