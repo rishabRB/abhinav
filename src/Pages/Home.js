@@ -5,12 +5,24 @@ import { ArrowDownTrayIcon, PhotoIcon } from "@heroicons/react/24/solid";
 // import { useNavigate } from "react-router-dom";
 
 
+const imageArray=[
+"https://i.ibb.co/PZMJXN6/img-0.jpg",
+"https://i.ibb.co/TrwFkPP/img-1.jpg",
+"https://i.ibb.co/cJ3FYSw/img-2.jpg",
+"https://i.ibb.co/M6n5nkW/img-3.jpg",
+"https://i.ibb.co/M6n5nkW/img-4.jpg",
+"https://i.ibb.co/0ryz10w/img-5.jpg",
+]
+
+
+
 function Home() {
 
   const [file, setFile] = useState(null);
   const [fakeImg , setFakeImg] = useState(null)
   const [decfile,setdecFile] = useState(null)
   const [decImg,setDecImg] = useState(null)
+  const [index,setIndex] = useState(0)
 
   
   function handleChange(e) {
@@ -23,6 +35,15 @@ function Home() {
     setdecFile(URL.createObjectURL(e.target.files[0]));
   }
 
+  const handleDownload=()=>{
+    const x = Math.floor(Math.random() * 5)
+    setTimeout(()=>{
+      setFile(null) ;
+      setIsLoading(false)
+    },3000)
+    
+  }
+
   const [isLoading, setIsLoading] = useState(false)
   const [isEncrypted,setIsEncrypted] = useState(false)
 
@@ -32,7 +53,7 @@ function Home() {
   setIsLoading(true)
   setTimeout(() => {
     setIsEncrypted(true) 
-  },4000);
+  },6000);
  }
 
 
@@ -140,7 +161,7 @@ function Home() {
                     <h1 className="text-2xl font-Ubuntu font-bold text-white">
                         Here is your encrypted image
                     </h1>
-                    <button onClick={()=> {setFile(null) ; setIsLoading(false)}} className="px-6 py-2 font-Ubuntu flex items-center bg-indigo-500 text-white hover:shadow-xl cursor-pointer rounded-full"> <ArrowDownTrayIcon  className="h-5 w-5 mr-3"/> Download</button>
+                    <a href={imageArray[index]} download onClick={()=> handleDownload()} className="px-6 py-2 font-Ubuntu flex items-center bg-indigo-500 text-white hover:shadow-xl cursor-pointer rounded-full"> <ArrowDownTrayIcon  className="h-5 w-5 mr-3"/> Download</a>
                 </div>
             </div>
             :
