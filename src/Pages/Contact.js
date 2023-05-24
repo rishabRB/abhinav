@@ -29,7 +29,7 @@ function Contact() {
                 <div className='h-auto w-[500px] m-1 space-y-2 flex flex-col items-center justify-center border-2  py-10 px-5'>
                      <img className='contactImage' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyZqgUo6pAmyOxYkFlbSasU6BVbnJlIrdvH2jRQMHTDZPmG1Di8j9IXoFBIAu8xtk5uro&usqp=CAU" alt="" />
                      <h2 className='uppercase text-2xl'>Rushali sarkar </h2>
-                     <a className='text-blue-500 flex items-center' href='mailto:rushalisarkar2000@gmail.co'><EnvelopeIcon className='h-4 w-4 mr-3' /> rushalisarkar2000@gmail.co</a>
+                     <a className='text-blue-500 flex items-center' href='mailto:rushalisarkar2000@gmail.com'><EnvelopeIcon className='h-4 w-4 mr-3' /> rushalisarkar2000@gmail.com</a>
                 </div>
             </div>
             </div>
