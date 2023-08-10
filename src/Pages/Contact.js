@@ -16,20 +16,26 @@ function Contact() {
             <div className='flex flex-col  md:flex-row items-center justify-between py-7 px-10'>
                 <div className='h-auto w-[500px] m-1 space-y-2 flex flex-col items-center justify-center border-2 py-10 px-5'>
                      <img className="contactImage" src='https://media.istockphoto.com/id/1143500885/vector/man-portrait-with-beard-vector-illustration-of-male-character.jpg?s=612x612&w=0&k=20&c=v9pv64ASjUYTRscfrYXEeof-oI2IfTPwJPuxRWNeG74=' alt="" />
-                     <h2 className='uppercase text-2xl'>Abhinav Kumar </h2>
-                     <a className='text-blue-500 flex items-center' href='mailto:abhinavkumar10122000@gmail.com'><EnvelopeIcon className='h-4 w-4 mr-3' /> abhinavkumar10122000@gmail.com</a>
+                     <h2 className='uppercase text-2xl'>Rishabb Bibhtuy </h2>
+                     <a className='text-blue-500 flex items-center' href='mailto:bibhuty82@gmail.com'><EnvelopeIcon className='h-4 w-4 mr-3' /> bibhuty82@gmail.com</a>
                 </div>
 
                 <div className='h-auto w-[500px] m-1 space-y-2 flex flex-col items-center justify-center  border-2 py-10 px-5'>
                      <img className='contactImage' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRv5dEZTaidyHavbXn3ZKklLufAj_NBD_ng&usqp=CAU" alt="" />
-                     <h2 className='uppercase text-2xl'>Purnendu roy </h2>
-                     <a className='text-blue-500 flex items-center' href='mailto:purnenduroypr2002@gmail.com'><EnvelopeIcon className='h-4 w-4 mr-3' /> purnenduroypr2002@gmail.com</a>
+                     <h2 className='uppercase text-2xl'>Abhishek Abhigynam </h2>
+                     <a className='text-blue-500 flex items-center' href='mailto:purnenduroypr2002@gmail.com'><EnvelopeIcon className='h-4 w-4 mr-3' /> xyx@gmail.com</a>
                 </div>
 
                 <div className='h-auto w-[500px] m-1 space-y-2 flex flex-col items-center justify-center border-2  py-10 px-5'>
-                     <img className='contactImage' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyZqgUo6pAmyOxYkFlbSasU6BVbnJlIrdvH2jRQMHTDZPmG1Di8j9IXoFBIAu8xtk5uro&usqp=CAU" alt="" />
-                     <h2 className='uppercase text-2xl'>Rushali sarkar </h2>
-                     <a className='text-blue-500 flex items-center' href='mailto:rushalisarkar2000@gmail.com'><EnvelopeIcon className='h-4 w-4 mr-3' /> rushalisarkar2000@gmail.com</a>
+                <img className="contactImage" src='https://media.istockphoto.com/id/1143500885/vector/man-portrait-with-beard-vector-illustration-of-male-character.jpg?s=612x612&w=0&k=20&c=v9pv64ASjUYTRscfrYXEeof-oI2IfTPwJPuxRWNeG74=' alt="" />
+                     <h2 className='uppercase text-2xl'>Aayush Raj </h2>
+                     <a className='text-blue-500 flex items-center' href='mailto:rushalisarkar2000@gmail.com'><EnvelopeIcon className='h-4 w-4 mr-3' /> xyx@gmail.com</a>
+                </div>
+
+                <div className='h-auto w-[500px] m-1 space-y-2 flex flex-col items-center justify-center border-2  py-10 px-5'>
+                <img className="contactImage" src='https://media.istockphoto.com/id/1143500885/vector/man-portrait-with-beard-vector-illustration-of-male-character.jpg?s=612x612&w=0&k=20&c=v9pv64ASjUYTRscfrYXEeof-oI2IfTPwJPuxRWNeG74=' alt="" />
+                     <h2 className='uppercase text-2xl'>Animesh </h2>
+                     <a className='text-blue-500 flex items-center' href='mailto:rushalisarkar2000@gmail.com'><EnvelopeIcon className='h-4 w-4 mr-3' /> ybs@gmail.com</a>
                 </div>
             </div>
             </div>
